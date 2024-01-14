@@ -12,11 +12,9 @@
 
 
 ## STEP.1　需要創立2個檔案
-參考本專案放置檔案之路徑，以及內容 (複製程式碼)，依此建立。 
-```
-/clone.py
-/.github/workflows/clone.yml
-```
+參考本專案放置檔案之路徑，以及內容 (複製程式碼)，依此建立。</br>
+- `/clone.py`
+- `/.github/workflows/clone.yml`
 
 ## STEP.2　修改2個檔案內容
 程式碼大神已都寫好，只需變更 `使用者名稱 / 專案名稱 / 分支名稱` ! </br>
@@ -25,7 +23,8 @@
 **搜尋並取代關鍵字** [ `xxx` 為你的專案名稱 ] </br>
 - How-To-Use-Clone-Shields_clone.json -> `xxx`_clone.json </br>
 - How-To-Use-Clone-Shields_clone_before.json -> `xxx`_clone_before.json </br>
-```
+- How-To-Use-Clone-Shields_clone.json -> `xxx`_clone.json </br>
+```python
 import json
 
 with open('How-To-Use-Clone-Shields_clone.json', 'r') as fh:
@@ -33,10 +32,13 @@ with open('How-To-Use-Clone-Shields_clone.json', 'r') as fh:
 
 with open('How-To-Use-Clone-Shields_clone_before.json', 'r') as fh:
     before = json.load(fh)
+
+with open('How-To-Use-Clone-Shields_clone.json', 'w', encoding='utf-8') as fh:
+    json.dump(latest, fh, ensure_ascii=False, indent=4)
 ```
 ### II.　clone.yml
 修改為你專案主要的分支，main -> 將內容替換成你的 [ `分支名稱` ]
-```
+```python
   # run on every push on the master branch
   push:
     branches:
