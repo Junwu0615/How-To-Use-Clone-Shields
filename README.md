@@ -18,6 +18,13 @@
 - `uniques_past_to_last_2_weeks_ago` : 過去至近 2 周前的所有累算加總 - 獨特用戶之克隆。
 - `count_total` : 過去至今日所有不限於獨特用戶之克隆加總，其也視作為 Clone 圖標的取值來源。
 - `uniques_total` : 過去至今日所有獨特用戶之克隆加總。
+- <img src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/00.jpg">
+
+- 可以看到新一筆 ( 2024-01-16 ) clone 資料進來了，此時也剛好滿足了字典長度超過 14 即進行刪除動作，而該 ( 2024-01-01 ) 筆資料就直接移除，並將其計數內容累加至 `count_past_to_last_2_weeks_ago` `uniques_past_to_last_2_weeks_ago` 兩個 key 值中。
+- 字典中的 `count` ，會與你的專案後台數據一致， 而 `count_past_to_last_2_weeks_ago` `uniques_past_to_last_2_weeks_ago` 兩個鍵值數據，由於後台只記錄到近 2 周內容，因此此法可穩定紀錄計數訊息。
+- `count_total` `uniques_total`，兩個鍵值之數值，是由「當前數值」加上「過去累加數據」得出 。
+  - `count_total` = 「`count`」 + 「`count_past_to_last_2_weeks_ago`」 。
+  - `uniques_total` = 「`uniques`」 + 「`uniques_past_to_last_2_weeks_ago` 」。
 
 ## STEP.1　需要創立2個檔案
 參考本專案放置檔案之路徑，以及內容 (複製程式碼)，依此建立。
