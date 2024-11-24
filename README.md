@@ -18,7 +18,7 @@
 - `uniques_past_to_last_2_weeks_ago` : 過去至近 2 周前的所有累算加總 - 獨特用戶之克隆。
 - `count_total` : 過去至今日所有不限於獨特用戶之克隆加總，其也視作為 Clone 圖標的取值來源。
 - `uniques_total` : 過去至今日所有獨特用戶之克隆加總。
-- <img src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/00.jpg">
+- <img src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/Sample/00.jpg">
 
 - 可以看到新一筆 ( 2024-01-16 ) clone 資料進來了，此時也剛好滿足了字典長度超過 14 即進行刪除動作，而該 ( 2024-01-01 ) 筆資料就直接移除，並將其計數內容累加至 `count_past_to_last_2_weeks_ago` `uniques_past_to_last_2_weeks_ago` 兩個 key 值中。
 - 字典中的 `count` ，會與你的專案後台數據一致， 而 `count_past_to_last_2_weeks_ago` `uniques_past_to_last_2_weeks_ago` 兩個鍵值數據，由於後台只記錄到近 2 周內容，因此此法可穩定紀錄計數訊息。
@@ -72,19 +72,19 @@ with open('How-To-Use-Clone-Shields_clone.json', 'w', encoding='utf-8') as fh:
 - 名稱設置為 `SECRET_TOKEN` 。
 - 天數可以設置不限天數 。
 - 權限設置依照下方二圖所設定 。 </br>
-  - <img width='550' height='500' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/token_00.jpg"/> 
-  - <img width='550' height='100' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/token_01.jpg"/>
+  - <img width='550' height='500' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/Sample/token_00.jpg"/> 
+  - <img width='550' height='100' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/Sample/token_01.jpg"/>
 - 完成後即儲存，會得到一個 `Token 密鑰` 將之複製起來，至你的專案設定頁面貼上去。
     - 專案設定頁面路徑 : 選擇你的專案中的設定 -> 秘密和變數 (Secrets and variables)
     - 密鑰名稱設置為 `SECRET_TOKEN` 。
     - 將方才取得的 Token 貼上去。
-    - <img width='750' height='450' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/token_02.jpg"/> 
+    - <img width='750' height='450' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/Sample/token_02.jpg"/> 
     - 完成後即儲存。
     
 ### II.　開啟工作流之讀寫權限
 - 設定路徑如下二圖所示。
-  - <img width='750' height='400' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/token_03.jpg"/> 
-  - <img width='500' height='200' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/sample_img/token_04.jpg"/> 
+  - <img width='750' height='400' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/Sample/token_03.jpg"/> 
+  - <img width='500' height='200' src="https://github.com/Junwu0615/How-To-Use-Clone-Shields/blob/main/Sample/token_04.jpg"/> 
 - 選擇完即儲存。
 
 ## STEP.4　README.md 設置圖標
